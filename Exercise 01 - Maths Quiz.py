@@ -11,5 +11,17 @@ label1 = Label(root, text="Please select your preffered mode of difficulty!",
           fg = "#ff6d6d", bg= "#ffdaa1", font=("Papyrus", 18, "bold"), wraplength=350, justify="center") # Wraplength and Justify values were driven from ChatGPT 
 label1.pack() # Calls the Label 1 so it will display on the GUI 
 
+# Making of Buttons 
+def onClick(): # Defines the onClick function, so that each button's command will call this function 
+    pass
+b1 = Button(root, text = "1. Easy", fg="#ff6d6d", bg="#ffdaa1", font=("Papyrus", 15, "bold"), command = onClick)
+b1.place(relx=0.5, y=150, anchor="center") 
+
+b2 = Button(root, text = "2. Moderate", fg="#ff6d6d", bg="#ffdaa1", font=("Papyrus", 15, "bold"), command=onClick)
+b2.place(relx=0.5, y=220, anchor="center")
+
+b3 = Button(root, text = "3. Difficult", fg="#ff6d6d", bg="#ffdaa1", font=("Papyrus", 15, "bold"), command=onClick)
+b3.place(relx=0.5, y=290, anchor="center") 
+
 root.mainloop() # Keeps the window application open unless user closes it 
 
