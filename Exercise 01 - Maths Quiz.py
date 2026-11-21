@@ -7,9 +7,9 @@ root.title ('Maths Quiz') # Title for the window application
 root.geometry ('400x600') # Sets the size of the window application
 root.configure (bg="#f7ce87") # Sets the window background color
 root.resizable (0,0) # Sets the window size to fixed 
-root.iconbitmap('Media Images/Logo.ico') # Logo for the Tkinter Window application 
+root.iconbitmap('Media/Logo.ico') # Logo for the Tkinter Window application 
 
-pooh_img = Image.open("Media Images/Image1.png") # Inserting image 
+pooh_img = Image.open("Media/Image1.png") # Inserting image 
 pooh_img = pooh_img.resize((200, 200)) # Sizing the image width and height 
 pooh_img = ImageTk.PhotoImage(pooh_img) # Calling the image so it will display
 
